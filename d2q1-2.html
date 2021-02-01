@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.main {
+				width: 1000px;
+				height: 400px;
+				background-color: gainsboro;
+				border: 1px #000000 solid;
+			}
+			.main>div {
+				width: 1000px;
+				height: 200px;
+			}
+			.main>div:first-child {
+				height: 199px;
+				border-bottom: 1px #000000 solid;
+			}
+			.main>div:last-child {
+			}
+			.main>div:first-child>div {
+				height: 200px;
+				width: 149px;
+				border-left: 1px #000000 solid;
+				float: left;
+			}
+			.main>div:first-child>div:first-child {
+				border-left: 0;
+				width: 250px;
+			}
+			.d2>div {
+				height: 200px;
+				float: left;
+			}
+			.d2>div:first-child {
+				width: 99px;
+				border-right: 1px #000000 solid;
+			}
+			.d2>div:last-child {
+				width: 900px;
+			}
+			.d3>div {
+				width: 900px;
+				height: 100px;
+			}
+			.d3>div:first-child {
+				height: 99px;
+				border-bottom: 1px #000000 solid;
+			}
+			.d4>div {
+				float: left;
+				width: 149px;
+				height: 99px;
+				border-left: 1px #000000 solid;
+			}
+			.d4>div:first-child {
+				width: 150px;
+				border-left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="d2">
+				<div></div>
+				<div class="d3">
+					<div class="d4">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
